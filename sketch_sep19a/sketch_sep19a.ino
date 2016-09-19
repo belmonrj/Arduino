@@ -57,6 +57,53 @@ void loop()
   analogWrite(redLEDPin,redValue);
   analogWrite(greenLEDPin,greenValue);
   analogWrite(blueLEDPin,blueValue);
+
+  delay(500);
+  analogWrite(redLEDPin,127);
+  analogWrite(greenLEDPin,0);
+  analogWrite(blueLEDPin,0);
+ 
+  delay(500);
+  analogWrite(redLEDPin,0);
+  analogWrite(greenLEDPin,127);
+  analogWrite(blueLEDPin,0);
+ 
+  delay(500);
+  analogWrite(redLEDPin,0);
+  analogWrite(greenLEDPin,0);
+  analogWrite(blueLEDPin,127);
+ 
+  delay(500);
+  analogWrite(redLEDPin,31);
+  analogWrite(greenLEDPin,0);
+  analogWrite(blueLEDPin,0);
+ 
+  delay(500);
+  analogWrite(redLEDPin,0);
+  analogWrite(greenLEDPin,31);
+  analogWrite(blueLEDPin,0);
+ 
+  delay(500);
+  analogWrite(redLEDPin,0);
+  analogWrite(greenLEDPin,0);
+  analogWrite(blueLEDPin,31);
+ 
+  delay(500);
+  analogWrite(redLEDPin,0);
+  analogWrite(greenLEDPin,31);
+  analogWrite(blueLEDPin,31);
+ 
+  delay(500);
+  analogWrite(redLEDPin,31);
+  analogWrite(greenLEDPin,31);
+  analogWrite(blueLEDPin,31);
+ 
+  delay(500);
+  analogWrite(redLEDPin,63);
+  analogWrite(greenLEDPin,63);
+  analogWrite(blueLEDPin,63);
+
+  delay(500);
 }
 
 
