@@ -1,3 +1,5 @@
+// --- Based on Project 02 from Arduino Projects Book
+
 int switchState = 0; // define switch state at global scope
 
 void setup()

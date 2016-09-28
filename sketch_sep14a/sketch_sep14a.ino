@@ -1,3 +1,5 @@
+// --- Based on built-in Blink tutorial
+
 void setup()
 {
   pinMode(13, OUTPUT);

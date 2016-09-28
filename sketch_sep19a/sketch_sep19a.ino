@@ -1,3 +1,5 @@
+// --- Based on Project 04 from Arduino Projects Book
+
 const int redLEDPin = 11;
 const int greenLEDPin = 9;
 const int blueLEDPin = 10;

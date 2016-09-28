@@ -1,3 +1,5 @@
+// --- Based on Project 03 from Arduino Projects Book
+
 const int sensorPin = A0;
 const float baselineTemp = 22.0;
 
