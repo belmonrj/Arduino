@@ -62,28 +62,34 @@ void loop()
 
   analogWrite(greenLEDPin,0);
   analogWrite(blueLEDPin,0);
-  for ( int i = 0; i < 250; ++i )
+  for ( int i = 0; i < redValue; ++i )
   {
     analogWrite(redLEDPin,i);
     delay(5);
   }
 
   analogWrite(redLEDPin,0);
-  for ( int i = 0; i < 250; ++i )
+  for ( int i = 0; i < greenValue; ++i )
   {
     analogWrite(greenLEDPin,i);
     delay(5);
   }
 
   analogWrite(greenLEDPin,0);
-  for ( int i = 0; i < 250; ++i )
+  for ( int i = 0; i < blueValue; ++i )
   {
     analogWrite(blueLEDPin,i);
     delay(5);
   }
 
-  for ( int i = 0; i < 250; ++i )
+  for ( int i = 0; i < 256; ++i )
   {
+    int redindex = i;
+    int greenindex = i;
+    int blueindex = i;
+    if ( i > redValue ) redindex = redValue;
+    if ( i > greenValue ) greenindex = greenValue;
+    if ( i > blueValue ) blueindex = blueValue;
     analogWrite(redLEDPin,i);
     analogWrite(greenLEDPin,i);
     analogWrite(blueLEDPin,i);
@@ -92,5 +98,4 @@ void loop()
 
   delay(500);
 }
-
 
